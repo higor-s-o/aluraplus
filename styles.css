@@ -20,7 +20,7 @@ body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -39,7 +39,7 @@ body{
 }
 
 .container__titulo{
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700; 
 }
 
@@ -59,7 +59,7 @@ body{
 }
 
 .container__aviso{
-    font-size: 12px;
+    font-size: 0.75;
     color: var(--cinza-secundario);
 }
 
@@ -82,7 +82,7 @@ body{
 
 .descricao__titulo{
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--branco-principal);
     margin-bottom: 0.1em;
 }
@@ -112,12 +112,12 @@ body{
 }
 
 .dispositivos__titulo{
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--branco-principal);
 }
 
 .lista__item {
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--branco-principal);
 }
 
@@ -136,7 +136,7 @@ body{
 }
 .lista__link a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--branco-principal);
     margin-left: 1em;
 }
@@ -149,7 +149,7 @@ body{
 }
 
 .rodape__texto{
-    font-size: 14px;
+    font-size: 0.875;
     color: var(--cinza-secundario);
     margin: 1em 0;
 }
@@ -157,3 +157,83 @@ body{
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
 }
+
+@media (max-width:1280px){
+    .container__caixa{
+        margin: 0 3em;
+    }
+    .container__descricao{
+        padding: 0;
+    }
+    
+    .secundario__imagem{
+        padding: 0 0 0 3em;
+    }
+}
+
+@media(max-width:400px){
+
+    *{  
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container{
+        height: 100vh;
+        display: flex
+    }
+
+    .container__caixa{
+        margin-left: 25%;
+    }
+    .secundario{
+        flex-direction: column;
+    }
+    .secundario__imagem{
+        width: 300px;
+        margin-left: 130px;
+        margin-top: 10px;
+    }
+
+    .descricao__titulo{
+        width: 400vh;
+    }
+    .container__descricao{
+        width: 400px;
+        margin-left: 150%;
+    }
+    .dispositivos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dispositivos__titulo{
+        margin-left: 45%;
+        width: 400px;
+    }
+    .dispositivos__lista{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 45%;
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape__logo{
+        max-width: 150px;
+        margin-left: 55%;
+    }
+    .rodape__lista{
+        flex-direction: column;
+        margin-left: 50%;
+        width: 250px;
+    }
+    .rodape__texto{
+        margin-left: 50%;
+        width: 400px;
+
+    }
+}
+
